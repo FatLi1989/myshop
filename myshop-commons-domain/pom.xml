@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>novli.nacos</groupId>
+        <artifactId>myshop-dependency</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../myshop-dependency/pom.xml</relativePath> <!-- lookup parent from repository -->
+    </parent>
+
+    <artifactId>myshop-commons-domain</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>myshop-commons-domain</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- Commons Begin -->
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+        </dependency>
+        <!-- Commons End -->
+
+        <!-- Projects Begin -->
+        <dependency>
+            <groupId>novli.nacos</groupId>
+            <artifactId>myshop-dependency</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <!-- Projects End -->
+    </dependencies>
+
+</project>
