@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: myshop-service-reg-config
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 47.244.240.165:8848
+
+

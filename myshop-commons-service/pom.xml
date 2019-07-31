@@ -9,34 +9,17 @@
         <relativePath>../myshop-dependency/pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>myshop-commons-domain</artifactId>
+    <artifactId>myshop-commons-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>myshop-commons-domain</name>
-    <description>Demo project for Spring Boot</description>
+    <name>myshop-commons-service</name>
+    <description>通用service</description>
 
     <dependencies>
-        <!-- Spring Begin -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-        <!-- Spring End -->
-
-        <!-- Commons Begin -->
-        <dependency>
-            <groupId>org.hibernate.validator</groupId>
-            <artifactId>hibernate-validator</artifactId>
-        </dependency>
-        <!-- Commons End -->
-
-        <!-- Projects Begin -->
         <dependency>
             <groupId>novli.nacos</groupId>
-            <artifactId>myshop-commons</artifactId>
+            <artifactId>myshop-commons-mapper</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
-        <!-- Projects End -->
     </dependencies>
 
 </project>
