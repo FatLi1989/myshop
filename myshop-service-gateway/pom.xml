@@ -9,17 +9,13 @@
         <relativePath>../myshop-dependency/pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>myshop-service-reg</artifactId>
+    <artifactId>myshop-service-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>myshop-service-reg</name>
-    <description>商品服务</description>
+    <name>myshop-service-gateway</name>
+    <description>myshop网关</description>
 
     <dependencies>
         <!-- Spring Boot Begin -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -34,30 +30,28 @@
         <!-- Spring Cloud Begin -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
         <!-- Spring Cloud End -->
 
-        <!-- Projects Begin -->
+        <!-- Commons Begin -->
         <dependency>
-            <groupId>novli.nacos</groupId>
-            <artifactId>myshop-commons-service</artifactId>
-            <version>${project.parent.version}</version>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
         </dependency>
-        <dependency>
-            <groupId>novli.nacos</groupId>
-            <artifactId>myshop-commons</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-        <!-- Projects End -->
+        <!-- Commons Begin -->
     </dependencies>
 
     <build>

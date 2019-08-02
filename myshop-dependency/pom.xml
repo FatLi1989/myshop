@@ -6,7 +6,6 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.6.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>novli.nacos</groupId>
@@ -32,9 +31,11 @@
         <spring-boot-pagehelper.version>1.2.10</spring-boot-pagehelper.version>
 
         <!-- Commons Settings -->
-        <mysql.version>8.0.13</mysql.version>
+        <mysql-version>8.0.13</mysql-version>
         <!-- 实体类验证 -->
         <hibernate-jpa-version>1.0.0.Final</hibernate-jpa-version>
+        <swagger-version>2.9.2</swagger-version>
+        <swagger-bootstrap-ui>1.9.2</swagger-bootstrap-ui>
     </properties>
 
     <dependencyManagement>
@@ -87,6 +88,16 @@
                 <version>${hibernate-jpa-version}</version>
             </dependency>
             <!-- 实体类验证 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>swagger-bootstrap-ui</artifactId>
+                <version>${swagger-bootstrap-ui}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

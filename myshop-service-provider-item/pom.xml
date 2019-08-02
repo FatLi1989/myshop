@@ -9,9 +9,9 @@
         <relativePath>../myshop-dependency/pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>myshop-service-reg</artifactId>
+    <artifactId>myshop-service-provider-item</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>myshop-service-reg</name>
+    <name>myshop-service-provider-item</name>
     <description>商品服务</description>
 
     <dependencies>
@@ -50,11 +50,6 @@
         <dependency>
             <groupId>novli.nacos</groupId>
             <artifactId>myshop-commons-service</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>novli.nacos</groupId>
-            <artifactId>myshop-commons</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <!-- Projects End -->

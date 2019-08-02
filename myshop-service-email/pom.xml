@@ -9,10 +9,10 @@
         <relativePath>../myshop-dependency/pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>myshop-service-reg</artifactId>
+    <artifactId>myshop-service-email</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>myshop-service-reg</name>
-    <description>商品服务</description>
+    <name>myshop-service-email</name>
+    <description>发送邮件服务</description>
 
     <dependencies>
         <!-- Spring Boot Begin -->
@@ -29,6 +29,20 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sourceforge.nekohtml</groupId>
+            <artifactId>nekohtml</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
         <!-- Spring Boot End -->
 
         <!-- Spring Cloud Begin -->
@@ -44,12 +58,13 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
+
         <!-- Spring Cloud End -->
 
         <!-- Projects Begin -->
         <dependency>
             <groupId>novli.nacos</groupId>
-            <artifactId>myshop-commons-service</artifactId>
+            <artifactId>myshop-commons-domain</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
