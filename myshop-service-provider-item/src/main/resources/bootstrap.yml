@@ -8,3 +8,6 @@ spring:
           - dataId: myshop-service-provider-item-config.yaml
             group: MYSHOP_DEV_GROUP
             refresh: true
+          - dataId: myshop-rabbitmq-config.yaml
+            group: MYSHOP_DEV_GROUP
+            refresh: true

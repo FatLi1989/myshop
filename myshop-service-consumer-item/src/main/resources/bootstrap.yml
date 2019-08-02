@@ -6,6 +6,9 @@ spring:
         namespace: 19aafadf-28b7-4ac3-92bc-2ea2186f23e0
         ext-config:
           - dataId: myshop-service-consumer-item-config.yaml
-              group: MYSHOP_DEV_GROUP
-              refresh: true
+            group: MYSHOP_DEV_GROUP
+            refresh: true
+          - dataId: myshop-rabbitmq-config.yaml
+            group: MYSHOP_DEV_GROUP
+            refresh: true
 
